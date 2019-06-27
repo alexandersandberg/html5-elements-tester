@@ -67,16 +67,16 @@ SVG elements (`<svg>`, among many others)
 ### Form elements
 
 #### Input fields
-`<input type="color/date/datetime-local/email/file/hidden/image/month/number/password/range/search/tel/text/time/url/week">`, `<label>`, `<textarea>`
+`<input type="color, date, datetime-local, email, file, hidden, image, month, number, password, range, search, tel, text, time, url, week">`, `<label>`, `<textarea>`
 
 #### Select menus
 `<datalist>`, `<optgroup>`, `<option>`, `<select>`
 
 #### Checkboxes and radio buttons
-`<input type="checkbox/radio/>`
+`<input type="checkbox, radio>`
 
 #### Buttons
-`<button>`, `<input type="button/reset/submit>`
+`<button>`, `<input type="button, reset, submit>`
 
 #### Other elements
 `<fieldset>`, `<legend>`, `<form>`, `<meter>`, `<output>`, `<progress>`, ``
