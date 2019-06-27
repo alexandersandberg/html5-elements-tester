@@ -13,7 +13,7 @@ Download `index.html`, include whatever resource you need to test (e.g. your CSS
 Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) for more details of each element.
 
 ### Meta
-`<base>`, `<body>`, `<head>`, `<html>`, `<link>`, `<meta>`, `<title>`,
+`<base>`, `<body>`, `<head>`, `<html>`, `<link>`, `<meta>`, `<title>`
 
 ### Structure and sectioning
 `<article>`, `<aside>`, `<div>`, `<footer>`, `<header>`, `<main>`, `<nav>`, `<section>`
@@ -50,7 +50,7 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 `<area>`, `<figcaption>`, `<figure>`, `<img>`, `<map>`, `<picture>`, `<source>`
 
 #### Audio and video
-`<audio>`, `<track>`, `<video>`,
+`<audio>`, `<track>`, `<video>`
 
 #### Objects
 `<embed>`, `<object>`, `<param>`
@@ -79,7 +79,7 @@ SVG elements (`<svg>`, among many others)
 `<button>`, `<input type=button, reset, submit>`
 
 #### Other elements
-`<fieldset>`, `<legend>`, `<form>`, `<meter>`, `<output>`, `<progress>`, ``
+`<fieldset>`, `<legend>`, `<form>`, `<meter>`, `<output>`, `<progress>`
 
 ### Experimental elements
 
