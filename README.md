@@ -4,12 +4,12 @@ A test page containing most of the HTML5 elements that you'll ever need. Useful 
 
 ## Usage
 ### Copy & Paste
-Copy HTML5 elements directly from `index.html` into your own documents.
+Copy elements directly from `index.html` into your own documents.
 
 ### Download
 Download `index.html`, include whatever resource you need to test (e.g. your CSS), and open the file in your preferred browser.
 
-## Supported HTML5 elements
+## Supported elements
 Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) for more details of each element.
 
 ### Meta
