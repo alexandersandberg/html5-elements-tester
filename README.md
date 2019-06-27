@@ -1,6 +1,6 @@
 # HTML5 elements tester
 
-A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets, CSS frameworks, or pretty much anything that uses HTML5 elements.
+A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.
 
 ## Usage
 ### Copy & Paste
