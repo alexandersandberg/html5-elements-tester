@@ -5,8 +5,353 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML5 elements template</title>
+  <link rel="stylesheet" href="equalize.min.css">
 </head>
 <body>
+  <a href="#main">Skip to main content</a>
 
+  <header>
+    <h1>HTML5 elements template</h1>
+    <p>Note: You can toggle CSS by pressing 'c' on your keyboard.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="#ch1">Text and typography</a>
+        <ul>
+          <li><a href="#ch1-1">Headings</a></li>
+          <li><a href="#ch1-2">Paragraphs</a></li>
+          <li><a href="#ch1-3">Inline elements</a></li>
+          <li><a href="#ch1-4">Code</a></li>
+          <li><a href="#ch1-5">Lists</a></li>
+          <li><a href="#ch1-6">Blockquotes</a></li>
+          <li><a href="#ch1-7">Horizontal rules</a></li>
+          <li><a href="#ch1-8">Tables</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#ch2">Embedded content</a>
+        <ul>
+          <li><a href="#ch2-1">Images</a></li>
+          <li><a href="#ch2-2">Audio and video</a></li>
+          <li><a href="#ch2-3">Canvas</a></li>
+          <li><a href="#ch2-4">SVG</a></li>
+          <li><a href="#ch2-5">iframe</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#ch3">Form elements</a>
+        <ul>
+          <li><a href="#ch3-1">Input fields</a></li>
+          <li><a href="#ch3-2">Select menus</a></li>
+          <li><a href="#ch3-3">Checkboxes and radio buttons</a></li>
+          <li><a href="#ch3-4">Other inputs</a></li>
+          <li><a href="#ch3-5">Buttons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#ch4">Experimental elements</a>
+        <ul>
+          <li><a href="#ch4-1">Some feature</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section id="ch1">
+      <header>
+        <span>Tagline</span>
+        <h2>Text and typography</h2>
+        <span>Subtitle</span>
+      </header>
+
+      <article id="ch1-1">
+        <header>
+          <h3>Headings</h3>
+        </header>
+
+        <!--
+          Note that, in this context, this use of <h*>s is not of appropriate
+          (accessible) rank, but used for testing purposes.
+        -->
+        <h1><code>&lt;h1&gt;</code> Heading 1</h1>
+        <h2><code>&lt;h2&gt;</code> Heading 2</h2>
+        <h3><code>&lt;h3&gt;</code> Heading 3</h3>
+        <h4><code>&lt;h4&gt;</code> Heading 4</h4>
+        <h5><code>&lt;h5&gt;</code> Heading 5</h5>
+        <h6><code>&lt;h6&gt;</code> Heading 6</h6>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-2">
+        <header>
+          <h3>Paragraphs</h3>
+        </header>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nulla rem voluptatum explicabo voluptas eaque sapiente dolorum doloribus voluptates rerum. In, doloremque ut? Earum vitae soluta architecto recusandae ad mollitia laborum ipsam quaerat repudiandae dolor? Doloremque saepe voluptas praesentium magni eligendi, dolor impedit sequi quidem ullam vel vitae! Illum, cum!</p>
+        <p>Assumenda dolorem voluptates optio minima quasi voluptas culpa consequatur sint officiis, recusandae nulla quisquam eum dignissimos ex, mollitia reiciendis enim soluta sunt?</p>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-3">
+        <header>
+          <h3>Inline elements</h3>
+        </header>
+
+
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-4">
+        <header>
+          <h3>Code</h3>
+        </header>
+
+
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-5">
+        <header>
+          <h3>Lists</h3>
+        </header>
+
+        <h4><code>&lt;dl&gt;</code> Definition list</h4>
+        <dl>
+          <dt>HTML5</dt>
+          <dd>HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.</dd>
+        </dl>
+        <h4><code>&lt;ol&gt;</code> Ordered list</h4>
+        <ol>
+          <li>List item</li>
+          <li>List item</li>
+          <li>List item</li>
+        </ol>
+        <h4><code>&lt;ul&gt;</code> Unordered list</h4>
+        <ul>
+          <li>List item</li>
+          <li>List item</li>
+          <li>List item</li>
+        </ul>
+        <h4>Nested lists</h4>
+        <ol>
+          <li>Take out trash</li>
+          <li>Shop groceries
+            <ul>
+              <li>Cheese</li>
+              <li>Tomatoes</li>
+              <li>Bread</li>
+            </ul>
+          </li>
+          <li>Call the president</li>
+        </ol>
+
+        <footer>
+            <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-6">
+        <header>
+          <h3>Blockquotes</h3>
+        </header>
+
+        <blockquote>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda quaerat illo libero dolores quasi, nemo possimus corporis odit veritatis sunt quibusdam laborum ipsum at eaque esse temporibus repellendus dicta.</p>
+          <footer>Smart person <cite>in the news</cite></footer>
+        </blockquote>
+
+        <footer>
+            <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-7">
+        <header>
+          <h3>Horizontal rules</h3>
+        </header>
+
+        <hr>
+
+        <footer>
+            <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch1-8">
+        <header>
+          <h3>Tables</h3>
+        </header>
+
+        <footer>
+            <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+    </section>
+
+    <section id="ch2">
+      <header>
+        <h2>Embedded content</h2>
+      </header>
+
+      <article id="ch2-1">
+        <header>
+          <h3>Images</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch2-2">
+        <header>
+          <h3>Audio and video</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch2-3">
+        <header>
+          <h3>Canvas</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch2-4">
+        <header>
+          <h3>SVG</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch2-5">
+        <header>
+          <h3>iframe</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+    </section>
+
+    <section id="ch3">
+      <header>
+        <h2>Form elements</h2>
+      </header>
+
+      <article id="ch3-1">
+        <header>
+          <h3>Input fields</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch3-2">
+        <header>
+          <h3>Select menus</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch3-3">
+        <header>
+          <h3>Checkboxes and radio buttons</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch3-4">
+        <header>
+          <h3>Other inputs</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+
+      <article id="ch3-5">
+        <header>
+          <h3>Buttons</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+    </section>
+
+    <section id="ch4">
+      <header>
+        <h2>Experimental elements</h2>
+      </header>
+
+      <article id="ch4-1">
+        <header>
+          <h3>Some feature</h3>
+        </header>
+
+        <footer>
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <aside>
+    <h2>About this project</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat! Nam, unde. Distinctio molestias magni eos ad quidem illum totam!</p>
+  </aside>
+
+  <footer>
+    <p><a href="https://github.com/alexandersandberg/html5-elements-template">HTML5 elements template</a> by <a href="https://alexandersandberg.com">Alexander Sandberg</a> · <a href="#">Back to top 👆</a></p>
+  </footer>
+
+  <script>
+    stylesheet = document.styleSheets.item(0);
+    document.body.addEventListener("keydown", () => {
+      if (event.key == "c") {
+        if (stylesheet.disabled == true) {
+          stylesheet.disabled=false;
+        } else {
+          stylesheet.disabled=true;
+        }
+      }
+    });
+  </script>
 </body>
 </html>
