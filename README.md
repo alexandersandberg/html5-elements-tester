@@ -12,79 +12,35 @@ Download `index.html`, include whatever resource you need to test (e.g. your CSS
 ## Supported elements
 Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) for more details of each element.
 
-### Meta
-`<base>`, `<body>`, `<head>`, `<html>`, `<link>`, `<meta>`, `<title>`
+### Sections
+`<body>`, `<article>`, `<section>`, `<nav>`, `<aside>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<header>`, `<footer>`
 
-### Structure and sectioning
-`<article>`, `<aside>`, `<div>`, `<footer>`, `<header>`, `<main>`, `<nav>`, `<section>`
+### Grouping content
+`<p>`, `<address>`, `<hr>`, `<pre>`, `<blockquote>`, `<ol>`, `<ul>`, `<li>`, `<dl>`, `<dt>`, `<dd>`, `<figure>`, `<figcaption>`, `<main>`, `<div>`
 
-### Text and typography
+### Text-level semantics
+`<a>`, `<em>`, `<strong>`, `<small>`, `<s>`, `<cite>`, `<q>`, `<dfn>`, `<abbr>`, `<ruby>`, `<rb>`, `<rt>`, `<rtc>`, `<rp>`, `<data>`, `<time>`, `<code>`, `<var>`, `<samp>`, `<kbd>`, `<sub>`, `<sup>`, `<i>`, `<b>`, `<u>`, `<mark>`, `<bdi>`, `<bdo>`, `<span>`, `<br>`, `<wbr>`
 
-#### Headings
-`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
-
-#### Paragraphs
-`<p>`
-
-#### Inline elements
-`<a>`, `<abbr>`, `<address>`, `<b>`, `<bdi>`, `<bdo>`, `<br>`, `<data>`, `<del>`, `<dfn>`, `<em>`, `<i>`, `<ins>`, `<mark>`, `<q>`, `<rb>`, `<rp>`, `<rt>`, `<rtc>`, `<ruby>`, `<s>`, `<small>`, `<span>`, `<strong>`, `<sub>`, `<sup>`, `<time>`, `<u>`, `<wbr>`
-
-#### Code
-`<code>`, `<kbd>`, `<pre>`, `<samp>`, `<var>`
-
-#### Lists
-`<dd>`, `<dl>`, `<dt>`, `<li>`, `<ol>`, `<ul>`
-
-#### Blockquotes
-`<blockquote>`, `<cite>`
-
-#### Horizontal rule
-`<hr>`
-
-#### Tables
-`<caption>`, `<col>`, `<colgroup>`, `<table>`, `<tbody>`, `<td>`, `<tfoot>`, `<th>`, `<thead>`, `<tr>`
+### Edits
+`<ins>`, `<del>`
 
 ### Embedded content
+`<picture>`, `<source>`, `<img>`, `<iframe>`, `<embed>`, `<object>`, `<param>`, `<video>`, `<audio>`, `<track>`, `<map>`, `<area>`, `<math>`, `<svg>`
 
-#### Images
-`<area>`, `<figcaption>`, `<figure>`, `<img>`, `<map>`, `<picture>`, `<source>`
+### Tabular data
+`<table>`, `<caption>`, `<colgroup>`, `<col>`, `<tbody>`, `<thead>`, `<tfoot>`, `<tr>`, `<td>`, `<th>`
 
-#### Audio and video
-`<audio>`, `<track>`, `<video>`
+### Forms
+`<form>`, `<label>`, `<input>`, `<button>`, `<select>`, `<datalist>`, `<optgroup>`, `<option>`, `<textarea>`, `<output>`, `<progress>`, `<meter>`, `<fieldset>`, `<legend>`
 
-#### Objects
-`<embed>`, `<object>`, `<param>`
+### Interactive elements
+`<details>`, `<summary>`, `<dialog>`
 
-#### SVG
-SVG elements (`<svg>`, among many others)
+### Scripting
+`<script>`, `<noscript>`, `<template>`, `<canvas>`
 
-#### iframe
-`<iframe>`
-
-#### Scripting
-`<canvas>`, `<noscript>`, `<script>`
-
-### Form elements
-
-#### Input fields
-`<input type=color, date, datetime-local, email, file, hidden, image, month, number, password, range, search, tel, text, time, url, week>`, `<label>`, `<textarea>`
-
-#### Select menus
-`<datalist>`, `<optgroup>`, `<option>`, `<select>`
-
-#### Checkboxes and radio buttons
-`<input type=checkbox, radio>`
-
-#### Buttons
-`<button>`, `<input type=button, reset, submit>`
-
-#### Other elements
-`<fieldset>`, `<legend>`, `<form>`, `<meter>`, `<output>`, `<progress>`
-
-### Experimental elements
-
-#### Interactive elements
-`<details>`, `<dialog>`, `<summary>`
+### Common idioms without dedicated elements (?)
+Coming later.
 
 ## A project by Alexander Sandberg
 
@@ -102,4 +58,4 @@ Distributed under the MIT License © [Alexander Sandberg](https://github.com/ale
 
 ---
 
-This project was inspired by [normalize.css](https://github.com/necolas/normalize.css)'s [test page](https://github.com/necolas/normalize.css/blob/master/test.html).
+This project was inspired by [normalize.css's test page](https://github.com/necolas/normalize.css/blob/master/test.html), and organized according to [W3C's HTML 5.2, §4: The elements of HTML](https://www.w3.org/TR/2017/REC-html52-20171214/semantics.html#semantics).
