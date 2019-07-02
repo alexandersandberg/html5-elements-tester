@@ -42,13 +42,7 @@
 
       <article>
         <header>
-          <h3>Semantic structure</h3>
-        </header>
-      </article>
-
-      <article>
-        <header>
-          <h3>Headings</h3>
+          <p><code>&lt;h1&gt;–&lt;h6&gt;</code>:</p>
         </header>
 
         <!--
@@ -75,6 +69,174 @@
         <h2>Grouping content</h2>
         <p>Elements: <code>&lt;p&gt;</code>, <code>&lt;address&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>, <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;div&gt;</code></p>
       </header>
+
+      <article>
+        <header>
+          <p><code>&lt;p&gt;</code>:</p>
+        </header>
+
+        <p>Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields. [1]</p>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;address&gt;</code>:</p>
+        </header>
+
+        <address>
+          Name: Alexander Sandberg<br>
+          Street adress: 1 Rover street<br>
+          State: N/A<br>
+          Planet: Mars<br>
+          Digital home: <a href="https://alexandersandberg.com">alexandersandberg.com</a><br>
+        </address>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;hr&gt;</code>:</p>
+        </header>
+
+        <hr>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;pre&gt;</code>:</p>
+        </header>
+
+        <pre>Preformatted text
+          will be presented
+    exactly as written
+          in the         HTML file.
+        </pre>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;blockquote&gt;</code>:</p>
+        </header>
+
+        <blockquote>
+          <p>The text inside this blockquote is wrapped in <code>&lt;p&gt;</code> tags. Sometimes the quote is really long, and possibly have to occupy multiple lines, but that shouldn't be a problem.</p>
+        </blockquote>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;ol&gt; + &lt;ul&gt; + &lt;li&gt;</code>:</p>
+        </header>
+
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2
+            <ol>
+              <li>List item 1</li>
+            </ol>
+          </li>
+          <li>List item 3
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2
+                <ul>
+                  <li>List item 1
+                    <ol>
+                      <li>List item 1</li>
+                      <li>List item 2</li>
+                    </ol>
+                  </li>
+                  <li>List item 2</li>
+                </ul>
+              </li>
+              <li>List item 3</li>
+            </ul>
+          </li>
+          <li>List item 4</li>
+        </ol>
+        <ul>
+          <li>List item 1
+            <ul>
+              <li>List item 1
+                <ul>
+                  <li>List item 1</li>
+                </ul>
+              </li>
+              <li>List item 2</li>
+            </ul>
+          </li>
+          <li>List item 2</li>
+          <li>List item 3
+            <ol>
+              <li>List item 1</li>
+              <li>List item 2</li>
+            </ol>
+          </li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;dl&gt; + &lt;dt&gt; + &lt;dd&gt;</code>:</p>
+        </header>
+
+        <dl>
+          <dt>This is a term</dt>
+          <dd>And this is the accompanying description, explaining the above term.</dd>
+          <dd>You can also have multiple descriptions (<code>&lt;dt&gt;</code>), like this one, for each term (<code>&lt;dt&gt;</code>).</dd>
+          <dd>And why not nest lists inside this description?
+            <dl>
+              <dt>Another term</dt>
+              <dd>With some description.</dd>
+            </dl>
+            <ul>
+                <li>List item 1</li>
+              </ul>
+              <ol>
+                <li>List item 1</li>
+                <li>List item 2</li>
+              </ol>
+          </dd>
+        </dl>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;figure&gt; + &lt;figcaption&gt;</code>:</p>
+        </header>
+
+        <p>Used with an <code>&lt;img&gt;</code>:</p>
+        <figure>
+          <img src="https://placekitten.com/600/300" alt="Kitten looking into camera">
+          <figcaption>Cute kitten from <a href="https://placekitten.com" target="_blank">placekitten.com</a>.</figcaption>
+        </figure>
+
+        <p>Used with a <code>&lt;blockquote&gt;</code>:</p>
+        <figure>
+          <blockquote>
+            <p>Seek wealth, not money or status. Wealth is having assets that earn while you sleep. Money is how we transfer time and wealth. Status is your place in the social hierarchy.</p>
+          </blockquote>
+
+          <figcaption>
+            <cite>Naval Ravikant (@naval)</cite> on <a href="https://twitter.com/naval/status/1002103497725173760">Twitter</a>.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article>
+        <header>
+            <p><code>&lt;main&gt;</code>:</p>
+        </header>
+        <p>See the <a href="#main">main content</a> of this page for a use case of <code>&lt;main&gt;</code>.</p>
+      </article>
+
+      <article>
+        <header>
+            <p><code>&lt;div&gt;</code>:</p>
+        </header>
+        <div>
+          <p>This paragraph of text is contained inside a <code>&lt;div&gt;</code>. The element really has no special meaning, other than grouping content together, and should be used as a last resort when no other element is suitable.</p>
+        </div>
+      </article>
 
       <footer>
         <a href="#">Back to top 👆</a>
