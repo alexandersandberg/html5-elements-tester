@@ -498,6 +498,49 @@ background: aliceblue;
         <p>Elements: <code>&lt;script&gt;</code>, <code>&lt;noscript&gt;</code>, <code>&lt;template&gt;</code>, <code>&lt;canvas&gt;</code></p>
       </header>
 
+      <article>
+        <header>
+          <h3><code>&lt;script&gt; + &lt;noscript&gt;</code>:</h3>
+        </header>
+
+        <p>Dynamic scripts and data blocks are included with the <code>&lt;script&gt;</code> element.</p>
+        <script>
+          document.write('<p>This paragraph was generated with JavaScript!</p>');
+        </script>
+        <p>If scripting is disabled when loading the page, content inside <code>&lt;noscript&gt;</code> is used instead.</p>
+        <noscript>
+          <p>I see you disabled JavaScript!</p>
+        </noscript>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;template&gt;</code>:</h3>
+        </header>
+
+        <p>Below this paragraph, there's a <code>&lt;template&gt;</code> element containing a HTML declaration, that can be used by scripts.</p>
+        <template>
+          <p>Hi! I'm a paragraph inside the <code>&lt;template&gt;</code> element.</p>
+        </template>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;canvas&gt;</code>:</h3>
+        </header>
+
+        <p>A <code>&lt;script&gt;</code> is used to draw a rectangle in the <code>&lt;canvas&gt;</code> below.</p>
+        <canvas id="canvas">
+          Alternative text explaining what's on display in this &lt;canvas&gt;.
+        </canvas>
+        <script>
+          var canvas = document.getElementById('canvas');
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = 'tomato';
+          ctx.fillRect(10, 10, 100, 100);
+        </script>
+      </article>
+
       <footer>
         <a href="#">Back to top 👆</a>
       </footer>
