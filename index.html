@@ -266,6 +266,79 @@
         <p>Elements: <code>&lt;a&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;s&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;q&gt;</code>, <code>&lt;dfn&gt;</code>, <code>&lt;abbr&gt;</code>, <code>&lt;ruby&gt;</code>, <code>&lt;rb&gt;</code>, <code>&lt;rt&gt;</code>, <code>&lt;rtc&gt;</code>, <code>&lt;rp&gt;</code>, <code>&lt;data&gt;</code>, <code>&lt;time&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;var&gt;</code>, <code>&lt;samp&gt;</code>, <code>&lt;kbd&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;b&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;mark&gt;</code>, <code>&lt;bdi&gt;</code>, <code>&lt;bdo&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;wbr&gt;</code></p>
       </header>
 
+      <article id="a">
+        <header>
+            <p><code>&lt;a&gt;</code>:</p>
+        </header>
+
+        <p>Here is <a href="#a">a link</a> inside a paragraph of text. Below you can find a list of links with different <code>href</code> attributes.</p>
+        <ul>
+          <li><a href="https://github.com/alexandersandberg/html5-elements-tester">Link to an external website</a></li>
+          <li><a href="#a">Anchor link to this element</a></li>
+          <li><a href="">Link with an empty <code>href</code> attribute</a></li>
+          <li><a>Link missing an <code>href</code> attribute</a></li>
+        </ul>
+      </article>
+
+      <article>
+        <header>
+            <p><code>&lt;em&gt; + &lt;i&gt; + &lt;strong&gt; + &lt;b&gt; + </code>:</p>
+        </header>
+
+        <p>The <code>&lt;em&gt;</code> element represents <em>stress emphasis</em> of its contents. Meanwhile, <code>&lt;i&gt;</code> is since HTML5 used for text in an alternative voice or mood, or otherwise offset from the <i>normal prose</i>, as you may define it.</p>
+        <p>If you want to <b>draw attention</b> to some text, feel free to use <code>&lt;b&gt;</code>. However, if you want to mark the importance of something, <strong>you should use <code>&lt;strong&gt;</code></strong>.</p>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;small&gt; + &lt;u&gt; + &lt;mark&gt; + &lt;s&gt;</code></p>
+        </header>
+
+
+      </article>
+
+      <article>
+        <header>
+            <p><code>&lt;abbr&gt; + &lt;dfn&gt;</code>:</p>
+        </header>
+
+        <p>By wrapping an abbreviation like <dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> in both <code>&lt;dfn&gt;</code> and <code>&lt;abbr&gt;</code>, we define the term. This can later be used only using <code>&lt;abbr&gt;</code>, since we already defined <abbr title="Cascading Style Sheets">CSS</abbr> once before.</p>
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;q&gt; + &lt;cite&gt; + &lt;data&gt; + &lt;time&gt;</code></p>
+        </header>
+
+
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;code&gt; + &lt;var&gt; + &lt;samp&gt; + &lt;kbd&gt; + &lt;sub&gt; + &lt;sup&gt;</code></p>
+        </header>
+
+
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;bdi&gt; + &lt;bdo&gt; + &lt;ruby&gt; + &lt;rb&gt; + &lt;rt&gt; + &lt;rtc&gt; + &lt;rp&gt;</code></p>
+        </header>
+
+
+      </article>
+
+      <article>
+        <header>
+          <p><code>&lt;span&gt; + &lt;br&gt; + &lt;wbr&gt;</code></p>
+        </header>
+
+        <p>A <code>&lt;span&gt;</code> can be used to mark up inline text for various uses, <span style="font-weight: bolder;">here to make the text bolder</span>.</p>
+        <p>If you have really long text you might want to insert a<br>blank line with the <code>&lt;br&gt;</code> element. You can also insert word breaking opportunities using <code>&lt;wbr&gt;</code>, to help the browser break long words like Pneumonoultramicro<wbr>scopicsilico<wbr>volcanoconiosis.
+        </p>
+      </article>
+
       <footer>
         <a href="#">Back to top 👆</a>
       </footer>
