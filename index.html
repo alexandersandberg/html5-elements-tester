@@ -406,6 +406,44 @@ background: aliceblue;
         <p>Elements: <code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code>, <code>&lt;colgroup&gt;</code>, <code>&lt;col&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code></p>
       </header>
 
+      <article>
+        <header>
+          <h3><code>&lt;table&gt; + &lt;caption&gt; + &lt;colgroup&gt; + &lt;col&gt;+ &lt;tbody&gt; + &lt;thead&gt; + &lt;tfoot&gt; + &lt;tr&gt; + &lt;td&gt; + &lt;th&gt;</code>:</h3>
+        </header>
+
+        <table>
+          <caption>This is the table caption</caption>
+          <colgroup>
+            <col>
+            <col span="2">
+            <col span="1">
+          </colgroup>
+          <thead>
+            <tr>
+              <th><code>&lt;thead&gt;</code></th>
+              <th>2nd colgroup</th>
+              <th>2nd colgroup</th>
+              <th>3rd colgroup</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td><code>&lt;tfoot&gt;</code></td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+              <td>Cell 4</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <th><code>&lt;tbody&gt;</code></th>
+              <td colspan="2">This is a cell spanning two columns</td>
+              <td>Last column</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
       <footer>
         <a href="#">Back to top 👆</a>
       </footer>
