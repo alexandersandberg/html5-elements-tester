@@ -41,9 +41,6 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 ### Scripting
 `<script>`, `<noscript>`, `<template>`, `<canvas>`
 
-### Common idioms without dedicated elements (?)
-Coming later.
-
 ## A project by Alexander Sandberg
 
 Thanks for checking out my project! ❤️
