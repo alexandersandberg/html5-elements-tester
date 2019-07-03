@@ -57,4 +57,4 @@ Distributed under the MIT License © [Alexander Sandberg](https://github.com/ale
 
 ---
 
-This project was inspired by [normalize.css's test page](https://github.com/necolas/normalize.css/blob/master/test.html), and organized according to [W3C's HTML 5.2, §4: The elements of HTML](https://www.w3.org/TR/2017/REC-html52-20171214/semantics.html#semantics).
+This project was inspired by [normalize.css's test page](https://github.com/necolas/normalize.css/blob/master/test.html) and [html5-kitchen-sink](https://github.com/dbox/html5-kitchen-sink), and organized according to [W3C's HTML 5.2, §4: The elements of HTML](https://www.w3.org/TR/2017/REC-html52-20171214/semantics.html#semantics).
