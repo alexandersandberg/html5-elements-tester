@@ -7,7 +7,7 @@
   <title>HTML5 elements tester</title>
   <link rel="stylesheet" href="equalize.min.css">
 </head>
-<body>
+<body id="body">
   <a href="#nav">Skip to navigation</a>
   <a href="#main">Skip to main content</a>
 
@@ -47,26 +47,43 @@
 
         <!--
           Note that, in this context, this use of <h*>s is not of appropriate
-          (accessible) rank, but used for testing purposes.
-        -->
-        <h1><code>&lt;h1&gt;</code> A unique title, specific for the page</h1>
-        <h2><code>&lt;h2&gt;</code> Heading levels should reflect structure, not style</h2>
-        <p>It can also be useful to test how body text below a heading appears on the page, for example to check the margin. This text is wrapped in &lt;p&gt; and is a direct sibling to the above &lt;h2&gt;.</p>
-        <h3><code>&lt;h3&gt;</code> If you need a visually smaller title, use CSS</h3>
-        <p>To create a semantically correct HTML structure that's accessible for everyone, make sure you're nesting the headings correctly. Never use more than one &lt;h1&gt; per page, and don't skip heading levels.</p>
-        <h4><code>&lt;h4&gt;</code> Headings below level 4 are not used as much</h4>
-        <h5><code>&lt;h5&gt;</code> But that doesn't mean you should forget about them</h5>
-        <h6><code>&lt;h6&gt;</code> And last, but not least, the heading with the lowest rank</h6>
-      </article>
+            (accessible) rank, but used for testing purposes.
+          -->
+          <h1><code>&lt;h1&gt;</code> A unique title, specific for the page</h1>
+          <h2><code>&lt;h2&gt;</code> Heading levels should reflect structure, not style</h2>
+          <p>It can also be useful to test how body text below a heading appears on the page, for example to check the margin. This text is wrapped in &lt;p&gt; and is a direct sibling to the above &lt;h2&gt;.</p>
+          <h3><code>&lt;h3&gt;</code> If you need a visually smaller title, use CSS</h3>
+          <p>To create a semantically correct HTML structure that's accessible for everyone, make sure you're nesting the headings correctly. Never use more than one &lt;h1&gt; per page, and don't skip heading levels.</p>
+          <h4><code>&lt;h4&gt;</code> Headings below level 4 are not used as much</h4>
+          <h5><code>&lt;h5&gt;</code> But that doesn't mean you should forget about them</h5>
+          <h6><code>&lt;h6&gt;</code> And last, but not least, the heading with the lowest rank</h6>
+        </article>
 
-      <footer>
-        <a href="#">Back to top 👆</a>
-      </footer>
-    </section>
+        <article id="article">
+          <header id="header">
+              <p><code>&lt;body&gt; + &lt;article&gt; + &lt;section&gt; + &lt;nav&gt; + &lt;aside&gt; + &lt;header&gt; + &lt;footer&gt;</code>:</p>
+          </header>
 
-    <section id="grouping-content">
-      <header>
-        <h2>Grouping content</h2>
+          <p>All these tags are already in use on the page. The list below contains links to each use case. See the source code of this file for more details.</p>
+          <ul>
+            <li><a href="#body"><code>&lt;body&gt;</code></a></li>
+            <li><a href="#article"><code>&lt;article&gt;</code></a></li>
+            <li><a href="#sections"><code>&lt;section&gt;</code></a></li>
+            <li><a href="#nav"><code>&lt;nav&gt;</code></a></li>
+            <li><a href="#aside"><code>&lt;aside&gt;</code></a></li>
+            <li><a href="#header"><code>&lt;header&gt;</code></a></li>
+            <li><a href="#footer"><code>&lt;footer&gt;</code></a></li>
+          </ul>
+        </article>
+
+        <footer id="footer">
+          <a href="#">Back to top 👆</a>
+        </footer>
+      </section>
+
+      <section id="grouping-content">
+        <header>
+          <h2>Grouping content</h2>
         <p>Elements: <code>&lt;p&gt;</code>, <code>&lt;address&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;blockquote&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code>, <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;div&gt;</code></p>
       </header>
 
@@ -331,7 +348,7 @@
     </section>
   </main>
 
-  <aside>
+  <aside id="aside">
     <h2>About this project</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, fugiat! Nam, unde. Distinctio molestias magni eos ad quidem illum totam!</p>
   </aside>
