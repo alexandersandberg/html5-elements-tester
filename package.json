@@ -8,7 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandersandberg/html5-elements-tester.git"
+    "url": "git://github.com/alexandersandberg/html5-elements-tester.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "keywords": [
     "html",
