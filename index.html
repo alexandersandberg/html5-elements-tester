@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML5 elements tester</title>
-  <link rel="stylesheet" href="equalize.min.css">
+  <link rel="stylesheet" href="equalize.min.css" id="stylesheet" disabled>
 </head>
 <body id="body">
   <a href="#nav">Skip to navigation</a>
@@ -929,7 +929,7 @@ background: aliceblue;
   </footer>
 
   <script>
-    stylesheet = document.styleSheets.item(0);
+    stylesheet = document.getElementById("stylesheet");
     document.body.addEventListener("keydown", () => {
       if (event.key == "c") {
         if (stylesheet.disabled == true) {
