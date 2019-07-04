@@ -1,6 +1,6 @@
 {
   "name": "html5-elements-tester",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.",
   "main": "index.html",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "git://github.com/alexandersandberg/html5-elements-tester.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "html",
