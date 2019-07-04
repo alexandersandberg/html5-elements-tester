@@ -1,0 +1,28 @@
+{
+  "name": "html5-elements-tester",
+  "version": "1.0.0",
+  "description": "A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandersandberg/html5-elements-tester.git"
+  },
+  "keywords": [
+    "html",
+    "html5",
+    "elements",
+    "testing-tool",
+    "tester",
+    "template",
+    "kitchen-sink"
+  ],
+  "author": "Alexander Sandberg <hi@alexandersandberg.com> (https://alexandersandberg.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexandersandberg/html5-elements-tester/issues"
+  },
+  "homepage": "https://github.com/alexandersandberg/html5-elements-tester#readme"
+}
