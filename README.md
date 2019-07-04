@@ -2,8 +2,6 @@
 
 A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.
 
-**Note: This project is still a work in progress**
-
 ## Usage
 ### Copy & Paste
 Copy elements directly from `index.html` into your own documents.
