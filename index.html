@@ -395,6 +395,114 @@ background: aliceblue;
         <p>Elements: <code>&lt;picture&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;param&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;track&gt;</code>, <code>&lt;map&gt;</code>, <code>&lt;area&gt;</code>, <code>&lt;math&gt;</code>, <code>&lt;svg&gt;</code></p>
       </header>
 
+      <article>
+        <header>
+          <h3><code>&lt;img&gt; + &lt;svg&gt;</code>:</h3>
+        </header>
+
+        <img src="https://placekitten.com/600/250" alt="Kitten being cute">
+        <svg height="250" width="510">
+          <polygon points="220,10 300,210 200,245 123,234" style="fill:tomato;stroke:rebeccapurple;stroke-width:5" />
+          This is a fallback message. If you see this, your browser does not support inline SVG.
+        </svg>
+
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;picture&gt; + &lt;source&gt;</code>:</h3>
+        </header>
+
+        <p>A different image will be shown depending on viewport size.</p>
+        <picture>
+          <source srcset="https://placekitten.com/800/400" media="(min-width: 1200px)">
+          <img src="https://placekitten.com/400/300" alt="Kitten being cute">
+        </picture>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;iframe&gt;</code>:</h3>
+        </header>
+
+        <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=New%20york+(HTML5%20Elements%20Tester)&amp;ie=UTF8&amp;t=k&amp;z=14&amp;iwloc=B&amp;output=embed"></iframe>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;embed&gt;</code>:</h3>
+        </header>
+
+        <embed src="http://mirrors.standaloneinstaller.com/video-sample/grb_2.mov" type="video/quicktime">
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;object&gt; + &lt;param&gt;</code>:</h3>
+        </header>
+
+        <object data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" type="application/pdf">
+          <param name="parameter" value="example">
+        </object>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;video&gt; + &lt;audio&gt; + &lt;track&gt;</code>:</h3>
+        </header>
+
+        <audio controls src="https://interactive-examples.mdn.mozilla.net/media/examples/t-rex-roar.mp3">
+          <p>This is a fallback text. If you see this, your browser does not support embedded audio.</p>
+        </audio>
+        <p>Audio is from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">an example on MDN</a>.</p>
+        <video controls width="400">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/examples/friday.mp4" type="video/mp4">
+          <track default kind="captions" srclang="en" src="https://interactive-examples.mdn.mozilla.net/media/examples/friday.vtt">
+          <p>This is a fallback text. If you see this, your browser does not support embedded videos.</p>
+        </video>
+        <p>Video and subtitles are from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track">an example on MDN</a>.</p>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;map&gt; + &lt;area&gt;</code>:</h3>
+        </header>
+
+        <p>Each side of the image below is linked to different anchors on this page. Give it a try!</p>
+        <map name="image-map" id="image-map">
+          <area shape="circle" coords="75,75,75" href="#image-map">
+          <area shape="circle" coords="275,75,75" href="#body">
+        </map>
+        <img usemap="#image-map" src="https://placehold.it/350x150" alt="350 x 150 image">
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;math&gt;</code>:</h3>
+        </header>
+
+        <p>The quadratic formula is:<br>
+          <math>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+              <mo form="prefix">-</mo> <mi>b</mi>
+              <mo>±</mo>
+              <msqrt>
+                <msup> <mi>b</mi> <mn>2</mn> </msup>
+                <mo>-</mo>
+                <mn>4</mn> <mo>⁢</mo> <mi>a</mi> <mo>⁢</mo> <mi>c</mi>
+              </msqrt>
+              </mrow>
+              <mrow>
+              <mn>2</mn> <mo>⁢</mo> <mi>a</mi>
+              </mrow>
+            </mfrac>
+          </math>
+        </p>
+      </article>
+
       <footer>
         <a href="#">Back to top 👆</a>
       </footer>
