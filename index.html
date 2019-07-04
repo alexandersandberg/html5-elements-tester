@@ -455,6 +455,270 @@ background: aliceblue;
         <p>Elements: <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;datalist&gt;</code>, <code>&lt;optgroup&gt;</code>, <code>&lt;option&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;progress&gt;</code>, <code>&lt;meter&gt;</code>, <code>&lt;fieldset&gt;</code>, <code>&lt;legend&gt;</code></p>
       </header>
 
+      <article>
+        <header>
+          <h3><code>&lt;form&gt; + &lt;label&gt; + &lt;input&gt; + &lt;button&gt; + &lt;select&gt; + &lt;datalist&gt; + &lt;optgroup&gt; + &lt;option&gt; + &lt;textarea&gt; + &lt;fieldset&gt; + &lt;legend&gt;</code>:</h3>
+        </header>
+
+        <form action="#forms">
+          <fieldset>
+            <legend>Welcome to the form</legend>
+            <p>
+              <label for="input-hidden">
+                Hidden: <input type="hidden" id="input-hidden">
+              </label>
+            </p>
+            <p>
+              <label for="input-text">
+                Text: <input type="text" id="input-text">
+              </label>
+            </p>
+            <p>
+              <label for="input-text">
+                Text (readonly): <input type="text" id="input-text" value="You can't change this" readonly>
+              </label>
+            </p>
+            <p>
+              <label for="input-text">
+                Text (disabled): <input type="text" id="input-text" value="This is not available" disabled>
+              </label>
+            </p>
+            <p>
+              <label for="input-search">
+                Search: <input type="search" id="input-search">
+              </label>
+            </p>
+            <p>
+              <label for="input-tel">
+                Telephone: <input type="tel" id="input-tel">
+              </label>
+            </p>
+            <p>
+              <label for="input-url">
+                URL: <input type="url" id="input-url">
+              </label>
+            </p>
+            <p>
+              <label for="input-email">
+                Email: <input type="email" id="input-email">
+              </label>
+            </p>
+            <p>
+              <label for="input-password">
+                Password: <input type="password" id="input-password">
+              </label>
+            </p>
+            <p>
+              <label for="input-date">
+                Date: <input type="date" id="input-date">
+              </label>
+            </p>
+            <p>
+              <label for="input-month">
+                Month: <input type="month" id="input-month">
+              </label>
+            </p>
+            <p>
+              <label for="input-week">
+                Week: <input type="week" id="input-week">
+              </label>
+            </p>
+            <p>
+              <label for="input-time">
+                Time: <input type="time" id="input-time">
+              </label>
+            </p>
+            <p>
+              <label for="input-datetime-local">
+                Datetime-local: <input type="datetime-local" id="input-datetime-local">
+              </label>
+            </p>
+            <p>
+              <label for="input-number">
+                Number: <input type="number" id="input-number">
+              </label>
+            </p>
+            <p>
+              <label for="input-range">
+                Range: <input type="range" id="input-range">
+              </label>
+            </p>
+            <p>
+              <label for="input-color">
+                Color: <input type="color" id="input-color">
+              </label>
+            </p>
+            <p>
+              <label for="input-checkbox-1">
+                Checkbox 1: <input type="checkbox" id="input-checkbox-1" name="checkbox">
+              </label>
+              <label for="input-checkbox-2">
+                Checkbox 2: <input type="checkbox" id="input-checkbox-2" name="checkbox">
+              </label>
+              <label for="input-checkbox-3">
+                Checkbox 3 (disabled): <input type="checkbox" id="input-checkbox-3" name="checkbox" disabled>
+              </label>
+            </p>
+            <p>
+              <label for="input-radio-1">
+                Radio 1: <input type="radio" id="input-radio-1" name="radio">
+              </label>
+              <label for="input-radio-2">
+                Radio 2: <input type="radio" id="input-radio-2" name="radio">
+              </label>
+              <label for="input-radio-3">
+                Radio 3 (disabled): <input type="radio" id="input-radio-3" name="radio" disabled>
+              </label>
+            </p>
+            <p>
+              <label for="select">
+                Select: <select name="select" id="select">
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label for="select-size">
+                Select (size): <select name="select-size" id="select-size" size=5>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                  <option value="6">Option 6</option>
+                  <option value="7">Option 7</option>
+                  <option value="8">Option 8</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label for="select-multiple">
+                Select (multiple): <select name="select-multiple" id="select-multiple" multiple>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label for="select-optgroup">
+                Select with optgroup: <select name="select-optgroup" id="select-optgroup">
+                  <optgroup label="Group 1">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                  </optgroup>
+                  <optgroup label="Group 2">
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                    <option value="5">Option 5</option>
+                  </optgroup>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label for="datalist">
+                Datalist:
+                <input name="datalist" list="datalist">
+                <datalist id="datalist">
+                  <option value="Option 1">
+                  <option value="Option 2">
+                  <option value="Option 3">
+                  <option value="Option 4">
+                </datalist>
+              </label>
+            </p>
+            <p>
+              <label for="textarea">
+                Textarea: <textarea name="textarea" id="textarea"></textarea>
+              </label>
+            </p>
+            <p>
+              <label for="input-file">
+                File (single): <input type="file" id="input-file">
+              </label>
+            </p>
+            <p>
+              <label for="input-file">
+                File (multiple): <input type="file" id="input-file" multiple>
+              </label>
+            </p>
+            <p>
+              <label for="input-submit">
+                Submit: <input type="submit" id="input-submit">
+              </label>
+            </p>
+            <p>
+              <label for="input-image">
+                Image button: <input type="image" id="input-image" src="https://placekitten.com/100/40">
+              </label>
+            </p>
+            <p>
+              <label for="input-reset">
+                Reset: <input type="reset" id="input-reset">
+              </label>
+            </p>
+            <p>
+              <label for="input-button">
+                Button: <input type="button" id="input-button" value="I'm an input with type=button">
+              </label>
+            </p>
+            <p>
+              <button type="button">I'm a <code>&lt;button&gt;</code></button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;output&gt;</code>:</h3>
+        </header>
+
+        <form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+          <fieldset>
+            <legend>Testing the <code>&lt;output&gt;</code> element</legend>
+            <input name=a type=number step=any> +
+            <input name=b type=number step=any> =
+            <output name=o for="a b"></output>
+            <p>Code is taken from <a href="https://www.w3.org/TR/2017/REC-html52-20171214/single-page.html#example-5b22c23a" target="_blank">this example by W3</a>.</p>
+          </fieldset>
+        </form>
+      </article>
+
+      <article>
+        <header>
+          <h3><code>&lt;progress&gt; + &lt;meter&gt;</code>:</h3>
+        </header>
+
+        <form action="#forms">
+          <fieldset>
+            <legend>Testing <code>&lt;progress&gt;</code> and <code>&lt;meter&gt;</code></legend>
+            <p>
+              <label for="progress">
+                Progress: <progress id="progress" max="100" value="64">64%</progress>
+              </label>
+            </p>
+            <p>
+              <label for="meter-2">
+                Meter (ok): <meter id="meter-2" max="100" low="30" high="80" optimum="50" value="50">50/100</meter>
+              </label>
+            </p>
+            <p>
+              <label for="meter-1">
+                Meter (warning): <meter id="meter-1" max="100" low="30" high="80" optimum="50" value="20">20/100</meter>
+              </label>
+            </p>
+            <p>
+              <label for="meter-3">
+                Meter (critical): <meter id="meter-3" max="100" low="60" high="70" value="90">80/100</meter>
+              </label>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+
       <footer>
         <a href="#">Back to top 👆</a>
       </footer>
