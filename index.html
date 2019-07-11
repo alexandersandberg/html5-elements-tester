@@ -11,18 +11,23 @@
   <a href="#nav">Skip to section navigation</a>
   <a href="#main">Skip to main content</a>
 
-  <aside>
-    <label for="select-css">Select CSS</label>
-    <select name="select-css" id="select-css">
-      <option value="none">No CSS (browser defaults)</option>
-      <optgroup label="CSS Resets" id="select-css-resets">
-      </optgroup>
-      <optgroup label="CSS Frameworks" id="select-css-frameworks">
-      </optgroup>
-    </select>
-    <div id="custom-css">
-      <label for="custom-css-input">Custom CSS</label>
-      <input type="text" id="custom-css-input" placeholder="A link to your custom CSS file">
+  <aside id="css-selection">
+    <div>
+      <label for="select-css">Select CSS</label>
+      <select name="select-css" id="select-css">
+        <option value="none">No CSS (browser defaults)</option>
+        <optgroup label="CSS Resets" id="select-css-resets">
+        </optgroup>
+        <optgroup label="CSS Frameworks" id="select-css-frameworks">
+        </optgroup>
+      </select>
+    </div>
+    <div>
+      <form action="" id="custom-css-form">
+        <label for="custom-css-input">Custom CSS</label>
+        <input type="text" id="custom-css-input" placeholder="A link to your custom CSS file">
+        <input type="submit" value="Apply CSS">
+      </form>
     </div>
   </aside>
 
@@ -31,7 +36,7 @@
     const selectCss = document.getElementById('select-css');
     const selectCssResets = document.getElementById('select-css-resets');
     const selectCssFrameworks = document.getElementById('select-css-frameworks');
-    const customCssInput = document.getElementById('custom-css-input');
+    const customCssForm = document.getElementById('custom-css-form');
 
     const cssResets = [
       { "name": "Equalize.css", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
@@ -62,8 +67,9 @@
       changeCss(e.target.value);
     });
 
-    customCssInput.addEventListener('change', e => {
-      changeCss(e.target.value);
+    customCssForm.addEventListener('submit', e => {
+      e.preventDefault();
+      changeCss(e.target[0].value);
     });
   </script>
 
