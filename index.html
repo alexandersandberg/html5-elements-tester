@@ -37,22 +37,21 @@
     <p>You can toggle the included CSS (<a href="https://github.com/alexandersandberg/equalize.css">equalize.css</a>) on/off by pressing 'c' on your keyboard. You can also replace it with your own CSS by downloading and editing this file.</p>
   </header>
 
-  <nav id="nav">
-    <h2>Navigation</h2>
-    <ul>
-      <li><a href="#sections">Sections</a></li>
-      <li><a href="#grouping-content">Grouping content</a></li>
-      <li><a href="#text-level-semantics">Text-level semantics</a></li>
-      <li><a href="#edits">Edits</a></li>
-      <li><a href="#embedded-content">Embedded content</a></li>
-      <li><a href="#tabular-data">Tabular data</a></li>
-      <li><a href="#forms">Forms</a></li>
-      <li><a href="#interactive-elements">Interactive elements</a></li>
-      <li><a href="#scripting">Scripting</a></li>
-    </ul>
-  </nav>
-
   <main id="main">
+    <nav id="nav">
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#sections">Sections</a></li>
+        <li><a href="#grouping-content">Grouping content</a></li>
+        <li><a href="#text-level-semantics">Text-level semantics</a></li>
+        <li><a href="#edits">Edits</a></li>
+        <li><a href="#embedded-content">Embedded content</a></li>
+        <li><a href="#tabular-data">Tabular data</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#interactive-elements">Interactive elements</a></li>
+        <li><a href="#scripting">Scripting</a></li>
+      </ul>
+    </nav>
     <section id="sections">
       <header>
         <h2>Sections</h2>
@@ -955,12 +954,34 @@ background: aliceblue;
       const customCssForm = document.getElementById('custom-css-form');
 
       const cssResets = [
-        { "name": "Equalize.css", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
-        { "name": "Sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" }
+        { "name": "Eric Meyer's 2.0", "link": "https://meyerweb.com/eric/tools/css/reset/reset.css" },
+        { "name": "equalize.css", "link": "https://raw.githack.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
+        { "name": "minireset.css", "link": "https://raw.githack.com/jgthms/minireset.css/master/minireset.min.css" },
+        { "name": "normalize.css", "link": "https://unpkg.com/normalize.css@8.0.1/normalize.css" },
+        { "name": "Remedy", "link": "https://raw.githack.com/mozdevs/cssremedy/master/remedy.css" },
+        { "name": "sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" },
+        { "name": "UndoHTML", "link": "http://tantek.com/log/2004/undohtml.css" },
       ];
 
       const cssFrameworks = [
-        { "name": "A framework, soon", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
+        { "name": "awsm.css", "link": "https://raw.githack.com/igoradamenko/awsm.css/master/dist/awsm.min.css" },
+        { "name": "Bahunya", "link": "https://raw.githack.com/kimeiga/bahunya/css/bahunya-0.1.3.css" },
+        { "name": "Bootstrap", "link": "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" },
+        { "name": "Foundation", "link": "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.min.css" },
+        { "name": "HTML5 Doctor", "link": "https://raw.githack.com/richclark/HTML5resetCSS/master/reset.css" },
+        { "name": "Kacit", "link": "https://raw.githack.com/Kimeiga/kacit/b3f813ed/kacit.min.css" },
+        { "name": "Marx", "link": "https://unpkg.com/marx-css/css/marx.min.css" },
+        { "name": "no-class", "link": "https://davidpaulsson.github.io/no-class/css/no-class.min.css" },
+        { "name": "Reboot", "link": "https://cdn.jsdelivr.net/npm/bootstrap-reboot@4.3.1/dist/reboot.min.css" },
+        { "name": "Sakura", "link": "https://unpkg.com/sakura.css/css/sakura.css" },
+        { "name": "Sakura Vader", "link": "https://unpkg.com/sakura.css/css/sakura-vader.css" },
+        { "name": "Semantic UI", "link": "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" },
+        { "name": "Tacit", "link": "https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.5.0.min.css" },
+        { "name": "Tufte", "link": "https://raw.githack.com/edwardtufte/tufte-css/gh-pages/tufte.min.css" },
+        { "name": "Water.css (light)", "link": "https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css" },
+        { "name": "Water.css (dark)", "link": "https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css" },
+        { "name": "Writ", "link": "https://writ.cmcenroe.me/writ.min.css" },
+        { "name": "YUI", "link": "http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" },
       ];
 
       const populateSelect = (list, target) => {

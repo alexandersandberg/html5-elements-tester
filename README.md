@@ -2,6 +2,10 @@
 
 A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.
 
+Since v1.1.0 now also including the option to *preview popular CSS resets and CSS frameworks*, as well as easily including *your own custom CSS* by pasting a direct link to it.
+
+If your favorite reset or framework is missing, please open an issue about it, and I'll add it to the list!
+
 ## Usage
 ### Copy & Paste
 Copy elements directly from `index.html` into your own documents.
@@ -38,6 +42,35 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 
 ### Scripting
 `<script>`, `<noscript>`, `<template>`, `<canvas>`
+
+## Supported resets and frameworks
+
+### Resets
+* [Eric Meyer's 2.0](https://meyerweb.com/eric/tools/css/reset/)
+* [equalize.css](https://github.com/alexandersandberg/equalize.css)
+* [minireset.css](https://github.com/jgthms/minireset.css)
+* [normalize.css](https://github.com/necolas/normalize.css)
+* [Remedy](https://github.com/mozdevs/cssremedy)
+* [sanitize.css](https://github.com/jonathantneal/sanitize.css/)
+* [UndoHTML](http://tantek.com/log/2004/undohtml.css)
+
+### Frameworks
+* [awsm.css](https://github.com/igoradamenko/awsm.css)
+* [Bahunya](https://github.com/Kimeiga/bahunya)
+* [Bootstrap](https://github.com/twbs/bootstrap)
+* [Foundation](https://github.com/zurb/foundation-sites)
+* [HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/)
+* [Kacit](https://github.com/yegor256/tacit)
+* [Marx](https://github.com/mblode/marx)
+* [no-class](https://github.com/davidpaulsson/no-class)
+* [Reboot]()
+* [Sakura & Sakura Vader](https://github.com/oxalorg/sakura/tree/master/css)
+* [Semantic UI](https://github.com/Semantic-Org/Semantic-UI)
+* [Tacit](https://github.com/yegor256/tacit)
+* [Tufte](https://github.com/edwardtufte/tufte-css)
+* [Water.css (light) & Water.css (dark)](https://github.com/kognise/water.css)
+* [Writ](https://github.com/programble/writ)
+* [YUI](https://yuilibrary.com/yui/docs/cssreset/)
 
 ## A project by Alexander Sandberg
 
