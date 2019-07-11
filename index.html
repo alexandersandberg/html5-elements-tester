@@ -31,48 +31,6 @@
     </div>
   </aside>
 
-  <script>
-    const stylesheet = document.getElementById('stylesheet');
-    const selectCss = document.getElementById('select-css');
-    const selectCssResets = document.getElementById('select-css-resets');
-    const selectCssFrameworks = document.getElementById('select-css-frameworks');
-    const customCssForm = document.getElementById('custom-css-form');
-
-    const cssResets = [
-      { "name": "Equalize.css", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
-      { "name": "Sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" }
-    ];
-
-    const cssFrameworks = [
-      { "name": "A framework, soon", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
-    ];
-
-    const populateSelect = (list, target) => {
-      list.forEach(item => {
-        const option = document.createElement('option');
-        option.textContent = item.name;
-        option.value = item.link;
-        target.appendChild(option);
-      });
-    }
-
-    populateSelect(cssResets, selectCssResets);
-    populateSelect(cssFrameworks, selectCssFrameworks);
-
-    const changeCss = link => {
-      stylesheet.setAttribute('href', link);
-    }
-
-    selectCss.addEventListener('change', e => {
-      changeCss(e.target.value);
-    });
-
-    customCssForm.addEventListener('submit', e => {
-      e.preventDefault();
-      changeCss(e.target[0].value);
-    });
-  </script>
-
   <header>
     <h1>HTML5 elements tester</h1>
     <p>A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks. You can find more information in the <a href="https://github.com/alexandersandberg/html5-elements-tester">project's repository on GitHub</a>.</p>
@@ -988,5 +946,47 @@ background: aliceblue;
   <footer>
     <p><a href="https://github.com/alexandersandberg/html5-elements-tester">HTML5 elements tester</a> by <a href="https://alexandersandberg.com">Alexander Sandberg</a> · <a href="#">Back to top 👆</a></p>
   </footer>
+
+  <script>
+      const stylesheet = document.getElementById('stylesheet');
+      const selectCss = document.getElementById('select-css');
+      const selectCssResets = document.getElementById('select-css-resets');
+      const selectCssFrameworks = document.getElementById('select-css-frameworks');
+      const customCssForm = document.getElementById('custom-css-form');
+
+      const cssResets = [
+        { "name": "Equalize.css", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
+        { "name": "Sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" }
+      ];
+
+      const cssFrameworks = [
+        { "name": "A framework, soon", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
+      ];
+
+      const populateSelect = (list, target) => {
+        list.forEach(item => {
+          const option = document.createElement('option');
+          option.textContent = item.name;
+          option.value = item.link;
+          target.appendChild(option);
+        });
+      }
+
+      populateSelect(cssResets, selectCssResets);
+      populateSelect(cssFrameworks, selectCssFrameworks);
+
+      const changeCss = link => {
+        stylesheet.setAttribute('href', link);
+      }
+
+      selectCss.addEventListener('change', e => {
+        changeCss(e.target.value);
+      });
+
+      customCssForm.addEventListener('submit', e => {
+        e.preventDefault();
+        changeCss(e.target[0].value);
+      });
+    </script>
 </body>
 </html>
