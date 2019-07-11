@@ -5,11 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML5 elements tester</title>
-  <link rel="stylesheet" href="equalize.min.css" id="stylesheet" disabled>
+  <link rel="stylesheet" id="stylesheet">
 </head>
 <body id="body">
-  <a href="#nav">Skip to navigation</a>
+  <a href="#nav">Skip to section navigation</a>
   <a href="#main">Skip to main content</a>
+
+  <aside>
+    <label for="select-css">Select CSS</label>
+    <select name="select-css" id="select-css">
+      <option value="none">No CSS (browser defaults)</option>
+      <optgroup label="CSS Resets" id="select-css-resets">
+      </optgroup>
+      <optgroup label="CSS Frameworks" id="select-css-frameworks">
+      </optgroup>
+    </select>
+    <div id="custom-css">
+      <label for="custom-css-input">Custom CSS</label>
+      <input type="text" id="custom-css-input" placeholder="Paste a link to your custom CSS file here">
+    </div>
+  </aside>
+
+  <script>
+    const stylesheet = document.getElementById('stylesheet');
+    const selectCss = document.getElementById('select-css');
+    const selectCssResets = document.getElementById('select-css-resets');
+    const selectCssFrameworks = document.getElementById('select-css-frameworks');
+    const customCssInput = document.getElementById('custom-css-input');
+
+    const cssResets = [
+      { "name": "Equalize.css", "link": "https://raw.githubusercontent.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
+      { "name": "Sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" }
+    ];
+
+    const cssFrameworks = [
+      { "name": "A framework, soon", "link": "https://raw.githubusercontent.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
+    ];
+
+    const populateSelect = (list, target) => {
+      list.forEach(item => {
+        const option = document.createElement('option');
+        option.textContent = item.name;
+        option.value = item.link;
+        target.appendChild(option);
+      });
+    }
+
+    populateSelect(cssResets, selectCssResets);
+    populateSelect(cssFrameworks, selectCssFrameworks);
+
+    selectCss.addEventListener('change', e => {
+      changeCss(e.target.value);
+    });
+
+    const changeCss = link => {
+      stylesheet.setAttribute('href', link);
+    }
+  </script>
 
   <header>
     <h1>HTML5 elements tester</h1>
@@ -926,18 +978,5 @@ background: aliceblue;
   <footer>
     <p><a href="https://github.com/alexandersandberg/html5-elements-tester">HTML5 elements tester</a> by <a href="https://alexandersandberg.com">Alexander Sandberg</a> · <a href="#">Back to top 👆</a></p>
   </footer>
-
-  <script>
-    stylesheet = document.getElementById("stylesheet");
-    document.body.addEventListener("keydown", () => {
-      if (event.key == "c") {
-        if (stylesheet.disabled == true) {
-          stylesheet.disabled=false;
-        } else {
-          stylesheet.disabled=true;
-        }
-      }
-    });
-  </script>
 </body>
 </html>
