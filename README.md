@@ -70,7 +70,6 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 * [Tufte](https://github.com/edwardtufte/tufte-css)
 * [Water.css (light) & Water.css (dark)](https://github.com/kognise/water.css)
 * [Writ](https://github.com/programble/writ)
-* [YUI](https://yuilibrary.com/yui/docs/cssreset/)
 
 ## A project by Alexander Sandberg
 
