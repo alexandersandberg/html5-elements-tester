@@ -52,14 +52,14 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 * [normalize.css](https://github.com/necolas/normalize.css)
 * [Remedy](https://github.com/mozdevs/cssremedy)
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css/)
-* [UndoHTML](http://tantek.com/log/2004/undohtml.css)
+* [UndoHTML](https://tantek.com/log/2004/undohtml.css)
 
 ### Frameworks
 * [awsm.css](https://github.com/igoradamenko/awsm.css)
 * [Bahunya](https://github.com/Kimeiga/bahunya)
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [Foundation](https://github.com/zurb/foundation-sites)
-* [HTML5 Doctor](http://html5doctor.com/html-5-reset-stylesheet/)
+* [HTML5 Doctor](https://html5doctor.com/html-5-reset-stylesheet/)
 * [Kacit](https://github.com/yegor256/tacit)
 * [Marx](https://github.com/mblode/marx)
 * [no-class](https://github.com/davidpaulsson/no-class)
