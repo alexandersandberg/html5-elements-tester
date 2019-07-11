@@ -22,7 +22,7 @@
     </select>
     <div id="custom-css">
       <label for="custom-css-input">Custom CSS</label>
-      <input type="text" id="custom-css-input" placeholder="Paste a link to your custom CSS file here">
+      <input type="text" id="custom-css-input" placeholder="A link to your custom CSS file">
     </div>
   </aside>
 
@@ -34,12 +34,12 @@
     const customCssInput = document.getElementById('custom-css-input');
 
     const cssResets = [
-      { "name": "Equalize.css", "link": "https://raw.githubusercontent.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
+      { "name": "Equalize.css", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" },
       { "name": "Sanitize.css", "link": "https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/10.0.0/sanitize.css" }
     ];
 
     const cssFrameworks = [
-      { "name": "A framework, soon", "link": "https://raw.githubusercontent.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
+      { "name": "A framework, soon", "link": "https://combinatronics.com/alexandersandberg/equalize.css/master/dist/equalize.min.css" }
     ];
 
     const populateSelect = (list, target) => {
@@ -54,13 +54,17 @@
     populateSelect(cssResets, selectCssResets);
     populateSelect(cssFrameworks, selectCssFrameworks);
 
+    const changeCss = link => {
+      stylesheet.setAttribute('href', link);
+    }
+
     selectCss.addEventListener('change', e => {
       changeCss(e.target.value);
     });
 
-    const changeCss = link => {
-      stylesheet.setAttribute('href', link);
-    }
+    customCssInput.addEventListener('change', e => {
+      changeCss(e.target.value);
+    });
   </script>
 
   <header>
