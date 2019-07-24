@@ -47,7 +47,6 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 
 ### Resets
 * [Eric Meyer's 2.0](https://meyerweb.com/eric/tools/css/reset/)
-* [equalize.css](https://github.com/alexandersandberg/equalize.css)
 * [HTML5 Doctor](https://html5doctor.com/html-5-reset-stylesheet/)
 * [minireset.css](https://github.com/jgthms/minireset.css)
 * [normalize.css](https://github.com/necolas/normalize.css)
@@ -55,6 +54,7 @@ Refer to [this list of HTML elements on MDN](https://developer.mozilla.org/en-US
 * [Remedy](https://github.com/mozdevs/cssremedy)
 * [sanitize.css](https://github.com/jonathantneal/sanitize.css/)
 * [UndoHTML](https://tantek.com/log/2004/undohtml.css)
+* [universalize.css](https://github.com/alexandersandberg/universalize.css)
 
 ### Frameworks
 * [awsm.css](https://github.com/igoradamenko/awsm.css)

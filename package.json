@@ -1,6 +1,6 @@
 {
   "name": "html5-elements-tester",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A test page containing most of the HTML5 elements that you'll ever need. Useful for testing CSS resets or CSS frameworks.",
   "main": "index.html",
   "scripts": {
